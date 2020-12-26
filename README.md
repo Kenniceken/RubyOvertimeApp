@@ -6,7 +6,7 @@
 ## System Models:
 - Post/Date/Rationale
 x User Devise
-- Admin/User => STI (Single Table Inheritance)
+x Admin/User => STI (Single Table Inheritance)
 
 
 ## UI
