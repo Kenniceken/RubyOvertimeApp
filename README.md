@@ -22,4 +22,6 @@ x Admin/User => STI (Single Table Inheritance)
 - Email Summary to Admin Users for Approval
 - Need documentation for no overtime
 
+## Refactor Todos:
+- Refactor user association integration  test in post_spec
 
