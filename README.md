@@ -4,9 +4,9 @@
 ## High Level Project Requirement Documentation
 
 ## System Models:
-- Post/Date/Rationale
-x User Devise
-x Admin/User => STI (Single Table Inheritance)
+- x Post/Date/Rationale
+- x User Devise
+- x Admin/User => STI (Single Table Inheritance)
 
 
 ## UI
