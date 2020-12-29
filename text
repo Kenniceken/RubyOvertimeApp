@@ -5,3 +5,5 @@ brew services restart postgresql
 rails db:migrate RAILS_ENV=test
 
 rvmsudo rvm cleanup all
+
+bundle exec rake db:setup

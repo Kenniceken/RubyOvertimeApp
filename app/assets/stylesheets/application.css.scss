@@ -14,9 +14,30 @@
  *= require_tree .
  *= require_self
  */
+ 
 
  .nav_menu
  {
      margin-top: 2rem;
+     
+     li {
+        color: rgb(4, 116, 221);
+        a {
+            color: rgb(121, 196, 247);
+        }
+     };
  }
 
+.active 
+ {
+    color: #800;
+    opacity: 1;
+    font-weight: 600;
+}
+    
+a .active
+{
+    color: #fff;
+    opacity: 1;
+    font-weight: 600;
+}

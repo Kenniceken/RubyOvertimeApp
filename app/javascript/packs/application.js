@@ -6,7 +6,9 @@
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
-import "channels"
+require ("channels")
+
+var jQuery = require("jquery")
 
 import "bootstrap"
 import "../stylesheets/application"

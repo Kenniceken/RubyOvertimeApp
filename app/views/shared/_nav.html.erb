@@ -6,21 +6,26 @@
 
 <ul class="nav_menu nav nav-tabs">
 	<li class="nav-item">
-        <%= link_to "Home", root_path, class: "nav-link active" %>
+        <%=  link_to root_path, :class => active_class?("nav-link", root_path) do %> 
+        Home
+        <% end %>
 	</li>
 	<li class="nav-item">
-        <%= link_to "Time Logs", posts_path, class: "nav-link" %>
+        <%= link_to posts_path, :class => active_class?("nav-link", posts_path) do%>
+         Time Logs
+        <% end %>
 	</li>
 	<li class="nav-item dropdown ml-md-auto">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
             My Account
         </a>
 		<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-            <%= link_to "Settings", edit_user_registration_path, class: "dropdown-item" %>
+            <%= link_to edit_user_registration_path, :class => active_class?("dropdown-item", edit_user_registration_path) do%>
+                Settings
+            <% end %>
 		<div class="dropdown-divider">
         </div> 
             <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-             <%= link_to "Login", user_session_path, class: "dropdown-item" %>
         </div>
 	</li>
 </ul>

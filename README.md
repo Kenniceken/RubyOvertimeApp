@@ -23,5 +23,6 @@
 - Need documentation for no overtime
 
 ## Refactor Todos:
+- Add a Full_Name method for posts associated with Users
 - Refactor user association integration  test in post_spec
 
