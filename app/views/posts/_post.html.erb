@@ -12,8 +12,8 @@
         <%= truncate(post.rationale) %>
     </td>
     <td>
-        <%= link_to edit_post_path(post), id: "edit_#{post.id}" do %>
-            <i class="fa fa-pencil-square-o text-success fa-2x"></i>
+        <%= link_to edit_post_path(post), class: "mr-3", id: "edit_#{post.id}" do %>
+            <i class="fa fa-pencil-square-o text-info fa-2x"></i>
         <% end %>
     </td>
 </tr>

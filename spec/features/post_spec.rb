@@ -24,6 +24,14 @@ describe 'navigate' do
         end
     end
 
+    describe 'new' do 
+        it 'it has a link to home page' do
+            visit root_path
+            click_link("new_post_from_nav")
+            expect(page.status_code).to eq(200)
+        end
+    end
+
     describe 'creation' do
         before do
             visit new_post_path
