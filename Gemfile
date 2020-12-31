@@ -34,6 +34,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'database_cleaner'
   gem 'capybara', '>= 2.15'
+  gem "factory_girl_rails"
 end
 
 group :development do
@@ -57,7 +58,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise', '~> 4.7', '>= 4.7.1'
-
-gem 'active_link_to', '~> 1.0', '>= 1.0.5'
-
 

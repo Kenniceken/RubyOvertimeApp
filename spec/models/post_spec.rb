@@ -4,7 +4,7 @@ RSpec.describe Post, type: :model do
   # pending "add some examples to (or delete) #{__FILE__}"
   describe "Creation" do
     before do
-      @post = Post.create(date: Date.today, rationale: "Anything")
+      @post = FactoryGirl.create(:post)
     end
     it 'can be created' do
       expect(@post).to be_valid
