@@ -12,8 +12,13 @@
         <%= truncate(post.rationale) %>
     </td>
     <td>
-        <%= link_to edit_post_path(post), class: "mr-3", id: "edit_#{post.id}" do %>
-            <i class="fa fa-pencil-square-o text-info fa-2x"></i>
+        <%= link_to edit_post_path(post), class: "mr-4", id: "edit_#{post.id}" do %>
+            <i class="fa fa-pencil-square-o text-info fa-1x"></i>
+        <% end %>
+    </td>
+    <td>
+        <%= link_to post_path(post), method: :delete, id: "delete_post_#{post.id}_from_index" do %>
+            <i class="fas fa-trash text-danger fa-1x aria-hidden="true""></i>
         <% end %>
     </td>
 </tr>
